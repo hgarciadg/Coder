@@ -1,0 +1,514 @@
+
+    body{
+        width:100%; 
+        max-width:1100px; 
+        margin:auto;
+        font-size: 14px;
+        background-color: #111;
+        font-family: 'Roboto', sans-serif;
+    }
+
+    #fonditohome{
+        height: 100vh;
+        background-image: url("img/fondito.jpg");
+        }
+
+.header {
+    width:100%; 
+    max-width:1000px; 
+    margin:auto; 
+    margin-top: 15px;
+    margin-bottom: 20px;
+}
+
+header .logo-header {
+    color:#007bb6;
+    font-size:30px;
+    line-height:30px;
+    float:left;
+}
+
+header nav {
+    float:right;
+}
+
+/* -- Base de la nav -- */
+ul.dropdown li a {
+ display: block;
+ padding: 7px 14px;
+ color: #c6c6c6;
+ text-decoration: none;
+}
+
+ul.dropdown li {
+ padding: 0;
+ color: #29aafe;
+ border-radius: 4px;
+}
+
+ul.dropdown li.despliegue {
+ padding: 7px 20px 7px 14px;
+ color:#29aafe;
+}
+
+ul.dropdown ul li.despliegue {
+ padding-right: 15px;
+ color: red;
+ background-color: #242424;
+}
+
+/* -- cajita desplegada -- */
+ul.dropdown ul a {
+ padding: 12px 5px 12px 12px;
+ width: 151px; /* Especially for IE */
+ background-color: #242424;
+
+}
+
+/* -- hover de cada items desplegados -- */
+ul.dropdown ul a:hover {
+ background-color: rgb(61, 61, 61);
+}
+
+/* -- Dropdown abierto -- */
+ul.dropdown li:hover > a.despliegue {
+ background-color: #242424;
+ color: #29aafe;
+ border-radius: 4px 4px 0px 0px;
+}
+
+
+ul.dropdown,
+ul.dropdown li,
+ul.dropdown ul {
+ list-style: none;
+ margin: 0;
+ padding: 0;
+ color:#c6c6c6;
+}
+
+
+ul.dropdown li {
+ float: left;
+ min-height: 1px;
+ line-height: 1.3em;
+ vertical-align: middle;
+}
+
+ul.dropdown li.hover,
+ul.dropdown li:hover {
+ position: relative;
+ z-index: 599;
+ cursor: default;
+}
+
+ul.dropdown ul {
+ visibility: hidden;
+ position: absolute;
+ top: 100%;
+ left: 0;
+ z-index: 598;
+ width: 100%;
+}
+
+ul.dropdown li:hover > ul {
+ visibility: visible;
+}
+
+.clear {clear:both}
+
+.titulohome{
+    width: 650px;
+    margin-top: 35px;
+    float: left;
+    margin-bottom: 0;
+    font-size: 70px;
+    font-family: 'Anton', sans-serif;
+    text-align: right;
+    color: #fff;
+    animation-name: titulo;
+    animation-iteration-count: 1;
+    animation-timing-function: ease-in;
+    animation-duration: 1s;
+    animation-delay: 0s;
+}
+
+@keyframes titulo{
+    0% {
+      transform: translate(-800px, 0px);
+            opacity: 1.0;
+    }
+
+    100% {
+     opacity: 0.0;
+    transform: translate(0px, 0px);
+    }
+  }
+
+  #proxfecha{
+    width: 290px;
+    background: #111111;
+    padding: 20px;
+    margin-top: 25px;
+    margin-bottom: 12px;
+    border-radius: 6px;
+    float: right;
+    animation-name: entrada;
+    animation-iteration-count: 1;
+    animation-timing-function: ease-in;
+    animation-duration: 0.5s;
+    animation-delay: 0s;
+}
+
+@keyframes entrada{
+    0% {
+        opacity: 1.0;
+        transform: translate(400px, 0px);
+
+    }
+    100% {
+    opacity: 0.0;
+    transition: 0.1s;
+    transform: translate(0px, 0px);
+    }
+  }
+
+#fechaizq{
+    margin: 0px;
+    float: left;
+    width: 70px;
+}
+
+.fechanumero{
+    font-size: 24px;
+    font-style: bold;
+    line-height: 0px;
+    width: 70px;
+}
+
+.fechadia{
+    font-size: 14px;
+    font-style: bold;
+    line-height: 0px;
+    width: 70px;
+}
+
+.fechacentro{
+    width: 200px;
+    float: left;
+}
+
+.fechalugar{
+    font-size: 30px;
+    margin: 0px;
+    margin-top: 2px;
+    margin-right: 10px;
+    font-kerning: -33px;
+    color: #3d3d3d;
+}
+
+.botonentrada{
+        background: #3b5998;
+        border: none;
+        padding: 11px;
+        padding-right: 50px;
+        padding-left: 50px;
+        color: #eceeef;
+        font-size: 14px;
+        border-radius: 4px;
+        float: left;
+        margin-top: 14px;
+    }
+
+.botonentrada:hover {
+        background-color: #1d3a7a;
+    }
+
+h1{
+    color: #db0d0d;
+    line-height: 0px;
+    padding-bottom: 10px;
+}
+
+p {
+    color:#555555;
+}
+    .textos{
+        color: #c6c6c6;
+        margin-left: 30px;
+    }
+
+.info {
+        width:100%; 
+        max-width:1000px; 
+        margin:auto;
+        height: 300px;
+}
+
+h3{
+    color: #c6c6c6;
+}
+
+.info1{ 
+    width: 29%;
+    float: left;
+    margin-left: 0px;
+    margin-right: 10px;
+    background-color: #080808;
+    border-radius: 4px;
+    padding-left: 18px;
+    padding-right: 18px;
+    font-size: 13px;
+    line-height: 16px;
+}
+
+span{
+font-size: 9px;
+background-color: #f04652;
+color: #000;
+border-radius: 3px;
+font-size: 11px;
+padding: 4px 9px;
+margin-left: 10px;
+}
+
+.info2{ 
+    width: 29%;
+    float: left;
+    margin-left: 0px;
+    margin-right: 10px;
+    background-color: #080808;
+    border-radius: 4px;
+    padding-left: 18px;
+    padding-right: 18px;
+    font-size: 13px;
+    line-height: 16px;
+}
+
+.info3{ 
+    width: 29%;
+    float: left;
+    margin-left: 0px;
+    margin-right: 0px;
+    background-color: #080808;
+    border-radius: 4px;
+    padding-left: 18px;
+    padding-right: 18px;
+    font-size: 13px;
+    line-height: 16px;
+}
+
+
+.site-footer
+{
+width:100%;
+max-width:1000px; 
+margin:auto; 
+padding:25px 0 20px;
+font-size: 11px;
+line-height:24px;
+color:#737373;
+position: relative;
+bottom: 20px;
+}
+
+.copyright-text
+{
+  margin-bottom:0;
+  float:left;
+  padding-right:0;
+  text-align:center;
+
+}
+
+.social-icons
+{
+  padding-left:0;
+  margin-bottom:0;
+  list-style:none;
+  float:right;
+}
+.social-icons li
+{
+  display:inline-block;
+  margin-bottom:4px;
+}
+.social-icons li.title
+{
+  margin-right:15px;
+  text-transform:uppercase;
+  color:#96a2b2;
+  font-weight:700;
+  font-size:13px
+}
+.social-icons a{
+  background-color:#333;
+  color:#818a91;
+  font-size:16px;
+  display:inline-block;
+  line-height:44px;
+  width:44px;
+  height:44px;
+  text-align:center;
+  margin-right:8px;
+  border-radius:100%;
+  text-decoration: none;
+  -webkit-transition:all .2s linear;
+  -o-transition:all .2s linear;
+  transition:all .2s linear
+}
+.social-icons a:active,.social-icons a:focus,.social-icons a:hover
+{
+  color:#fff;
+  background-color:#29aafe
+}
+.social-icons.size-sm a
+{
+  line-height:34px;
+  height:34px;
+  width:34px;
+  font-size:14px
+}
+.social-icons a.facebook:hover
+{
+  background-color:#3b5998
+}
+.social-icons a.twitter:hover
+{
+  background-color:#00aced
+}
+.social-icons a.instagram:hover
+{
+  background-color:#007bb6}
+
+
+.form-contacto{
+    width: 400px;
+    padding: 30px;
+    margin: auto;
+    margin-top: 10px;
+}
+.controls{
+    width: 400px;
+    background: #242424;
+    padding: 10px;
+    border-radius: 4px;
+    margin-bottom: 16px;
+    border: 1px solid #3d3d3d;
+    font-family: Arial, Helvetica, sans-serif;
+    font-size: 18px;
+    color: #555555;
+}
+
+.form-contacto .boton{
+    width: 422px;
+    background: #3b5998;
+    border: none;
+    padding: 12px;
+    color: #eceeef;
+    margin: 16px 0;
+    font-size: 12px;
+    border-radius: 4px;
+}
+
+.form-contacto .boton2{
+    width: 422px;
+    background: #757575;
+    border: none;
+    padding: 10px;
+    color: #eceeef;
+    margin: 10px 0;
+    font-size: 12px;
+    border-radius: 4px;
+}
+
+.titulitoform{
+    color: #757575; 
+    font-weight: 100px;
+}
+
+.opcionesform{
+    color: #c6c6c6;
+    margin-top: 16px;
+}
+
+.selects{
+     width: 422px;
+     padding: 12px;
+     border-radius: 4px;
+     font-size: 18px;
+     margin: 2px 0;
+     border: 1px solid #3d3d3d;
+     background-color: #242424;
+     height: 44px;
+     color: #555555;
+     font-family: Arial, Helvetica, sans-serif;
+}
+
+.boton:hover {
+    background-color: #1d3a7a;
+}
+
+.boton2:hover {
+    background-color: #3d3d3d;
+}
+
+.titulito{
+    color: #757575;
+    padding-left: 23px;
+}
+
+.descripcion{
+    font-size: 11px;
+    color: #757575;
+    line-height: 4px;
+    list-style:none;
+}
+
+.descripcionfecha{
+    font-size: 11px;
+    color: #757575;
+    line-height: 14px;
+    list-style:none;
+    scroll-padding-top: 20px;
+}
+
+.listadocanciones{
+    line-height: 22px;
+    list-style:none;
+    font-size: 13px;
+    padding-top: 30px;
+
+}
+
+table{
+    border: 0;
+    background: #222;
+    border-radius: 6px;
+    padding: 20px;
+    padding-top: 0px;
+}
+
+.signo{
+    color: #29aafe;
+    animation-name: signo;
+    margin-left: 700px;
+    animation-iteration-count: infinite;
+    animation-timing-function: ease-in;
+    animation-duration: 3s;
+    animation-delay: 0s;
+}
+
+
+@keyframes signo{
+    0% {      
+        transform: translate(0px, -20px);
+        transition: 1s;
+    }
+
+    100% {
+      opacity: 0.0;
+      transform: translate(0px, -390px);
+      transition: 1s;
+    }
+  }
